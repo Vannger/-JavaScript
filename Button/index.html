@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Title</title>
+        <style>
+            .figures{
+                display: flex;
+                width: 90%;
+            }
+            .square{
+                height: 150px; 
+                width: 150px; 
+                background: blue;
+            }
+
+            .triangle{
+                height: 1px; 
+                width: 1px; 
+                border-left: 75px solid transparent;
+                border-right: 75px solid transparent;
+                border-top: 150px solid brown;
+            }
+
+            .ellipse{
+                height: 150px;
+                width: 150px;
+                background-color: darkblue;
+                border-radius: 50%;
+            }
+
+            .labels{
+                display: flex;
+            }
+            button
+            {
+                max-width: 100px;
+            }
+
+            ul{
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+            }
+            div
+            {
+                margin-left: 100px;
+                margin-bottom: 20px;
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="labels">
+            <button>Change color</button>
+            <ul>
+                <li>First Square</li>
+                <li>Second Triangle</li>
+                <li>Third Ellipse</li>
+            </ul>
+        </div>
+        <div class="figures">
+            <div class="square"></div>
+            <div class="triangle"></div>
+            <div class="ellipse"></div>
+        </div>
+        <script src="sketch.js"></script>
+    </body>
+</html>
