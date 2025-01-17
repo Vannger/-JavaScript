@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Музыкальный Визуализатор</title>
+  <script src="lib/p5.js"></script>
+  <script src="lib/p5.sound.js"></script>
+  <link rel="stylesheet" href="style.css"> <!-- Подключаем CSS файл -->
+</head>
+<body>
+  <!-- Sparks -->
+  <div class="Sparks Effect">
+	<div class="fire-glow fire-glow-1">
+		<div class="container">
+			<span class="inner-glow inner-glow-1"></span>
+			<span class="inner-glow inner-glow-2"></span>
+			<span class="inner-glow inner-glow-3"></span>
+		</div>
+	</div>
+	<div class="fire-glow fire-glow-2">
+		<div class="container">
+			<span class="inner-glow inner-glow-1"></span>
+			<span class="inner-glow inner-glow-2"></span>
+			<span class="inner-glow inner-glow-3"></span>
+		</div>
+	</div>
+	<div class="fire-glow fire-glow-3">
+		<div class="container">
+			<span class="inner-glow inner-glow-1"></span>
+			<span class="inner-glow inner-glow-2"></span>
+			<span class="inner-glow inner-glow-3"></span>
+		</div>
+	</div>
+	<div class="fire-glow fire-glow-4">
+		<div class="container">
+			<span class="inner-glow inner-glow-1"></span>
+			<span class="inner-glow inner-glow-2"></span>
+			<span class="inner-glow inner-glow-3"></span>
+		</div>
+	</div>
+	<div class="fire-glow fire-glow-5">
+		<div class="container">
+			<span class="inner-glow inner-glow-1"></span>
+			<span class="inner-glow inner-glow-2"></span>
+			<span class="inner-glow inner-glow-3"></span>
+		</div>
+	</div>
+	<div class="fire-glow fire-glow-6">
+		<div class="container">
+			<span class="inner-glow inner-glow-1"></span>
+			<span class="inner-glow inner-glow-2"></span>
+			<span class="inner-glow inner-glow-3"></span>
+		</div>
+	</div>
+  </div>
+  
+  
+  <!-- Controls -->
+  <div class="controls">
+    <div class="buttons">
+      <button id="playPauseButton">Play/Pause</button>
+      <button id="nextTrackButton">Next Track</button>
+      <button id="increaseSpeedButton">Increase Speed</button>
+      <button id="decreaseSpeedButton">Decrease Speed</button>
+      <button id="trebleButton">Treble</button>
+      <button id="bassButton">Bass</button>
+      <button id="reverbButton">Reverb</button>
+      <button id="toneButton">Tone</button>
+    </div>
+    <div class="sliders">
+    <label for="volumeSlider">Volume</label>
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.2"> <!-- Слайдер для громкости -->
+    <label for="bassSlider">Bass Frequency</label>
+    <input type="range" id="bassSlider" min="50" max="500" value="100">
+    <label for="trebleSlider">Treble Frequency</label>
+    <input type="range" id="trebleSlider" min="1000" max="10000" value="5000">
+    <label for="rateSlider">Speed</label>
+    <input type="range" id="rateSlider" min="0.5" max="2" step="0.1" value="1">
+    </div>
+  </div>
+  <script src="sketch.js"></script>
+  
+  <!-- Scripts -->
+  <script src="sketch.js"></script> 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="Sparks.js"></script>
+</body>
+</html>
